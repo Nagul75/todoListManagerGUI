@@ -1,0 +1,26 @@
+# Build output directories
+/cmake-build-*/
+/build/
+
+# CMake generated files
+/CMakeCache.txt
+/CMakeFiles/
+/cmake_install.cmake
+/Makefile
+/compile_commands.json
+
+# IDE configuration files
+/.idea/
+/.vscode/
+
+# Compiled binaries and object files
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.o
+*.obj
