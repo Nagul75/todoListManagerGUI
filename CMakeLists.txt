@@ -20,7 +20,9 @@ set(IMGUI_SOURCES
 add_executable(todoListManagerGUI
         main.cpp
         glad.c
-        ${IMGUI_SOURCES} # <--- MOVED HERE
+        todoListManager.h
+        todoListManager.cpp
+        ${IMGUI_SOURCES}
 )
 
 # --- Configure the Target ---
