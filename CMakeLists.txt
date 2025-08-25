@@ -41,7 +41,7 @@ target_link_libraries(todoListManagerGUI PRIVATE
 
 # Specify which files to install and where they should go.
 # This installs final executable into a 'bin' folder in the package.
-install(TARGETS TodoListGUI DESTINATION bin)
+install(TARGETS todoListManagerGUI DESTINATION bin)
 
 # This installs data file alongside the executable.
 install(FILES tasks.txt DESTINATION bin)
@@ -51,9 +51,9 @@ install(FILES tasks.txt DESTINATION bin)
 include(InstallRequiredSystemLibraries)
 
 # Set some basic package information.
-set(CPACK_PACKAGE_NAME "${PROJECT_NAME}")
+set(CPACK_PACKAGE_NAME "todoListManagerGUI")
 set(CPACK_PACKAGE_VERSION "1.0")
-set(CPACK_PACKAGE_VENDOR "Your Name")
+set(CPACK_PACKAGE_VENDOR "regal")
 
 # Include the CPack module itself to enable packaging.
 include(CPack)
