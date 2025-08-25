@@ -38,3 +38,22 @@ target_link_libraries(todoListManagerGUI PRIVATE
         glfw
         ${OPENGL_LIBRARIES}
 )
+
+# Specify which files to install and where they should go.
+# This installs final executable into a 'bin' folder in the package.
+install(TARGETS TodoListGUI DESTINATION bin)
+
+# This installs data file alongside the executable.
+install(FILES tasks.txt DESTINATION bin)
+
+# This module finds all the system libraries that app is dependent on (like libc++, etc.)
+# and adds them to the installation.
+include(InstallRequiredSystemLibraries)
+
+# Set some basic package information.
+set(CPACK_PACKAGE_NAME "${PROJECT_NAME}")
+set(CPACK_PACKAGE_VERSION "1.0")
+set(CPACK_PACKAGE_VENDOR "Your Name")
+
+# Include the CPack module itself to enable packaging.
+include(CPack)
